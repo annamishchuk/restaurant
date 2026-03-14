@@ -1,0 +1,372 @@
+body {
+    background-color: #f5f0e8;
+    color: #2a1f0e;
+    font-size: 18px;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1208;
+    border-bottom: 1px solid #8B6914;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #c9a84c;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-family: "Times New Roman", serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #c9a84c;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    padding-bottom: 3px;
+}
+
+nav a:hover {
+    color: #f0d080;
+    border-bottom: 2px solid #f0d080;
+}
+
+nav a:active {
+    color: #fff;
+    font-weight: bold;
+}
+
+#gallery2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#gallery2 img {
+    width: 25%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0;
+    filter: brightness(0.75);
+    transition: filter 0.3s;
+}
+
+#gallery2 img:hover {
+    filter: brightness(1);
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#gallery img {
+    width: 25%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0;
+    filter: brightness(0.75);
+    transition: filter 0.3s;
+}
+
+#gallery img:hover {
+    filter: brightness(1);
+}
+
+#menu {
+    min-height: 100vh;
+    padding: 60px 50px;
+    text-align: center;
+    background-color: #b19c7a;
+}
+
+#menu h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", serif;
+    color: #7e6728;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#menu h2::before {
+    content: "🍽";
+    display: block;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+}
+
+.menu-item {
+    background-color: #fff8ee;
+    border-radius: 4px;
+    padding: 25px 15px;
+    text-align: center;
+    border: 1px solid #d4b483;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.menu-item img {
+    width: calc(100% + 30px);
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+    margin: -25px -15px 15px -15px;
+    display: block;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(139, 105, 20, 0.2);
+    border-color: #c9a84c;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    color: #2a1f0e;
+    margin-bottom: 8px;
+    font-family: "Times New Roman", serif;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #8B6914;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+}
+
+.weight {
+    display: block;
+    color: #b09060;
+    font-size: 13px;
+    font-family: "Times New Roman", serif;
+    margin-top: 10px;
+}
+
+.price {
+    display: block;
+    color: #1a1208;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    margin-top: 5px;
+}
+
+#chef {
+    padding: 60px 50px;
+    background-color: #a38b6c;
+    text-align: center;
+}
+
+#chef h2 {
+    font-size: 38px;
+    color: #fdeec2;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.chef-wrap {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.chef-wrap img {
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #937322;
+    flex-shrink: 0;
+}
+
+.chef-info h3 {
+    font-size: 28px;
+    color: #392f13;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.chef-info p {
+    font-size: 16px;
+    color: #f0e6d3;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.chef-info ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.chef-info ul li {
+    font-size: 15px;
+    color: #5b4711;
+    border: 1px solid #000000;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+#booking {
+    min-height: 100vh;
+    text-align: center;
+    padding: 60px 50px;
+    background-color: #1a1208;
+}
+
+#booking h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: #c9a84c;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 14px 20px;
+    border: 1px solid #8B6914;
+    border-radius: 4px;
+    background-color: #221a0a;
+    color: #f0e6d3;
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+    transition: border-color 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: none;
+    border-color: #c9a84c;
+}
+
+.booking-form input::placeholder {
+    color: #7a6040;
+}
+
+.booking-form select option {
+    background-color: #221a0a;
+    color: #f0e6d3;
+}
+
+.booking-form button {
+    padding: 16px;
+    background-color: #c9a84c;
+    color: #1a1208;
+    border: 2px solid #c9a84c;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.booking-form button:hover {
+    background-color: transparent;
+    color: #c9a84c;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111009;
+    color: #8B6914;
+    font-size: 14px;
+    border-top: 1px solid #8B6914;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    header h1 { font-size: 26px; }
+    .menu-grid { grid-template-columns: repeat(3, 1fr); padding: 20px; }
+    #gallery img, #gallery2 img { width: 25%; height: 250px; }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    header h1 { font-size: 22px; letter-spacing: 3px; }
+    nav { gap: 15px; }
+    nav a { font-size: 12px; }
+    #gallery, #gallery2 { flex-wrap: wrap; }
+    #gallery img, #gallery2 img { width: 50%; height: 220px; }
+    .menu-grid { grid-template-columns: repeat(2, 1fr); padding: 10px; }
+    #menu, #booking { padding: 40px 20px; }
+    #menu h2, #booking h2 { font-size: 28px; }
+}
+
+@media (max-width: 600px) {
+    header { padding: 12px 15px; }
+    header h1 { font-size: 18px; letter-spacing: 2px; }
+    nav { flex-direction: column; gap: 8px; align-items: center; }
+    nav a { font-size: 12px; }
+    #gallery, #gallery2 { flex-direction: column; }
+    #gallery img, #gallery2 img { width: 100%; height: 200px; }
+    .menu-grid { grid-template-columns: 1fr; padding: 10px; gap: 15px; }
+    #menu, #booking { padding: 25px 15px; min-height: auto; }
+    #menu h2, #booking h2 { font-size: 22px; margin-bottom: 20px; }
+    .booking-form input, .booking-form select { font-size: 15px; padding: 12px 15px; }
+    .booking-form button { font-size: 14px; }
+
+    #chef { padding: 25px 15px; overflow: hidden; }
+    #chef h2 { font-size: 22px; letter-spacing: 2px; margin-bottom: 20px; }
+    .chef-wrap { flex-direction: row; gap: 12px; align-items: flex-start; width: 100%; box-sizing: border-box; }
+    .chef-wrap img { width: 110px; height: 140px; flex-shrink: 0; }
+    .chef-info { flex: 1; min-width: 0; overflow: hidden; }
+    .chef-info h3 { font-size: 15px; margin-bottom: 6px; word-break: break-word; }
+    .chef-info p { font-size: 12px; line-height: 1.4; word-break: break-word; }
+    .chef-info ul { margin-top: 10px; }
+    .chef-info ul li { font-size: 11px; padding: 5px 8px; word-break: break-word; }
+}
