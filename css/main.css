@@ -374,7 +374,7 @@ nav { flex-direction: row; gap: 12px; align-items: center; flex-wrap: wrap; just
 
 .menu-item p { display: none; }
 
-.weight { display: none; }
+.weight { display: block; font-size: 10px; margin: 0 4px 2px; }
 
 .price { font-size: 12px; margin: 0 4px 6px; }
     #menu, #booking { padding: 25px 15px; min-height: auto; }
