@@ -354,8 +354,8 @@ nav { flex-direction: row; gap: 12px; align-items: center; flex-wrap: wrap; just
     nav a { font-size: 12px; }
  #gallery, #gallery2 {
     justify-content: flex-start;
-    gap: 6px;
-    padding: 6px;
+    gap: 2px;
+    padding: 0px;
 }
 
 #gallery img, #gallery2 img {
