@@ -342,7 +342,7 @@ footer {
     #gallery img {
         min-width: 85vw !important;
         width: 85vw !important;
-        height: 350px !important;
+        height: 450px !important;
         border-radius: 0;
         scroll-snap-align: start;
     }
