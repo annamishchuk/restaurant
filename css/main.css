@@ -71,7 +71,7 @@ nav a:active {
 #gallery img {
     width: 25%;
     min-width: 25%;
-    height: 350px;
+    height: 550px;
     object-fit: cover;
     border-radius: 0;
     filter: brightness(0.75);
