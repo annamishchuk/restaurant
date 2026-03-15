@@ -58,30 +58,6 @@ nav a:active {
     font-weight: bold;
 }
 
-#gallery2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     gap: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: auto;
-}
-
-#gallery2 img {
-    width: 25%;
-    min-width: 25%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 0;
-    filter: brightness(0.75);
-    transition: filter 0.3s;
-    flex-shrink: 0;
-}
-
-#gallery2 img:hover {
-    filter: brightness(1);
-}
 #gallery {
     display: flex;
     justify-content: center;
@@ -147,6 +123,7 @@ nav a:active {
     border: 1px solid #d4b483;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
+
 .menu-item img {
     width: calc(100% + 30px);
     height: 150px;
@@ -215,6 +192,7 @@ nav a:active {
     margin: 0 auto;
     text-align: left;
 }
+
 .chef-wrap img {
     width: 320px;
     height: 400px;
@@ -246,7 +224,6 @@ nav a:active {
     gap: 10px;
     margin-top: 20px;
 }
-
 
 #booking {
     min-height: 100vh;
@@ -333,15 +310,15 @@ footer {
 @media (min-width: 901px) and (max-width: 1200px) {
     header h1 { font-size: 26px; }
     .menu-grid { grid-template-columns: repeat(3, 1fr); padding: 20px; }
-    #gallery img, #gallery2 img { width: 25%; height: 250px; }
+    #gallery img { width: 25%; height: 250px; }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
     header h1 { font-size: 22px; letter-spacing: 3px; }
     nav { gap: 15px; }
     nav a { font-size: 12px; }
-    #gallery, #gallery2 { flex-wrap: wrap; }
-    #gallery img, #gallery2 img { width: 50%; height: 220px; }
+    #gallery { flex-wrap: wrap; }
+    #gallery img { width: 50%; height: 220px; }
     .menu-grid { grid-template-columns: repeat(2, 1fr); padding: 10px; }
     #menu, #booking { padding: 40px 20px; }
     #menu h2, #booking h2 { font-size: 28px; }
@@ -350,37 +327,34 @@ footer {
 @media (max-width: 600px) {
     header { padding: 12px 15px; }
     header h1 { font-size: 18px; letter-spacing: 2px; }
-nav { flex-direction: row; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
+    nav { flex-direction: row; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
     nav a { font-size: 12px; }
-#gallery, #gallery2 {
-    justify-content: flex-start;
-    gap: 2px;
-    padding: 0;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
 
-#gallery img, #gallery2 img {
-    min-width: 85vw !important;
-    width: 85vw !important;
-    height: 250px !important;
-    border-radius: 0;
-    scroll-snap-align: start;
-}
+    #gallery {
+        justify-content: flex-start;
+        gap: 2px;
+        padding: 0;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    #gallery img {
+        min-width: 85vw !important;
+        width: 85vw !important;
+        height: 250px !important;
+        border-radius: 0;
+        scroll-snap-align: start;
+    }
+
     .menu-grid { grid-template-columns: repeat(3, 1fr); padding: 8px; gap: 6px; }
+    .menu-item { padding: 0; border-radius: 4px; overflow: hidden; }
+    .menu-item img { width: 100%; height: 90px; margin: 0; border-radius: 4px 4px 0 0; }
+    .menu-item h3 { font-size: 11px; margin: 4px 4px 2px; }
+    .menu-item p { display: none; }
+    .weight { display: block; font-size: 10px; margin: 0 4px 2px; }
+    .price { font-size: 12px; margin: 0 4px 6px; }
 
-.menu-item { padding: 0; border-radius: 4px; overflow: hidden; }
-
-.menu-item img { width: 100%; height: 90px; margin: 0; border-radius: 4px 4px 0 0; }
-
-.menu-item h3 { font-size: 11px; margin: 4px 4px 2px; }
-
-.menu-item p { display: none; }
-
-.weight { display: block; font-size: 10px; margin: 0 4px 2px; }
-
-.price { font-size: 12px; margin: 0 4px 6px; }
     #menu, #booking { padding: 25px 15px; min-height: auto; }
     #menu h2, #booking h2 { font-size: 22px; margin-bottom: 20px; }
     .booking-form input, .booking-form select { font-size: 15px; padding: 12px 15px; }
