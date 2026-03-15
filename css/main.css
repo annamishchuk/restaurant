@@ -352,17 +352,21 @@ footer {
     header h1 { font-size: 18px; letter-spacing: 2px; }
 nav { flex-direction: row; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
     nav a { font-size: 12px; }
- #gallery, #gallery2 {
+#gallery, #gallery2 {
     justify-content: flex-start;
     gap: 2px;
-    padding: 0px;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
 #gallery img, #gallery2 img {
-    min-width: 160px !important;
-    width: 160px !important;
-    height: 160px !important;
-    border-radius: 4px;
+    min-width: 85vw !important;
+    width: 85vw !important;
+    height: 250px !important;
+    border-radius: 0;
+    scroll-snap-align: start;
 }
     .menu-grid { grid-template-columns: repeat(3, 1fr); padding: 8px; gap: 6px; }
 
