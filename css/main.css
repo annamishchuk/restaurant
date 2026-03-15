@@ -62,24 +62,26 @@ nav a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
+     gap: 0;
     padding: 0;
     width: 100%;
+    overflow-x: auto;
 }
 
 #gallery2 img {
     width: 25%;
+    min-width: 25%;
     height: 350px;
     object-fit: cover;
     border-radius: 0;
     filter: brightness(0.75);
     transition: filter 0.3s;
+    flex-shrink: 0;
 }
 
 #gallery2 img:hover {
     filter: brightness(1);
 }
-
 #gallery {
     display: flex;
     justify-content: center;
@@ -87,15 +89,18 @@ nav a:active {
     gap: 0;
     padding: 0;
     width: 100%;
+    overflow-x: auto;
 }
 
 #gallery img {
     width: 25%;
+    min-width: 25%;
     height: 350px;
     object-fit: cover;
     border-radius: 0;
     filter: brightness(0.75);
     transition: filter 0.3s;
+    flex-shrink: 0;
 }
 
 #gallery img:hover {
@@ -347,23 +352,17 @@ footer {
     header h1 { font-size: 18px; letter-spacing: 2px; }
 nav { flex-direction: row; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
     nav a { font-size: 12px; }
-  #gallery, #gallery2 {
-    display: flex !important;
-    flex-direction: row !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
+ #gallery, #gallery2 {
+    justify-content: flex-start;
     gap: 6px;
     padding: 6px;
-    flex-wrap: nowrap !important;
 }
 
 #gallery img, #gallery2 img {
     min-width: 160px !important;
     width: 160px !important;
     height: 160px !important;
-    object-fit: cover;
     border-radius: 4px;
-    flex-shrink: 0 !important;
 }
     .menu-grid { grid-template-columns: 1fr; padding: 10px; gap: 15px; }
     #menu, #booking { padding: 25px 15px; min-height: auto; }
